@@ -8,7 +8,7 @@ import semantic_hashing as sh
 W = sh.fit(train_data)
 hashs = sh.transform(test_data,W)
 ```
-### fit(tfs, hidden_layer=[500,500], output_layer=128, maxepoch=50, lr_w = 0.1, lr_vb = 0.1, lr_hb = 0.1, weightcost = 0.0002, momentum = 0.9, pretrain_size_batch=100, finetuning_size_batch=1000)
+##### fit(tfs, hidden_layer=[500,500], output_layer=128, maxepoch=50, lr_w = 0.1, lr_vb = 0.1, lr_hb = 0.1, weightcost = 0.0002, momentum = 0.9, pretrain_size_batch=100, finetuning_size_batch=1000)
 Entrena la DBN según los tfs, la cantidad de capas ocultas, tamaño de los batchs. Retorna una lista con los pesos de la red.
 ```
 tfs: Numpy Array de tfs.
@@ -24,7 +24,7 @@ pretrain_size_batch: Tamaño de cada batch en pre-entrenamiento.
 finetuning_size_batch: Tamaño de cada batch en fine-tuning.
 ```
 
-### transform(tfs,W)
+##### transform(tfs,W)
 Transforma los tfs en cadenas binarias.
 ```
 tfs: Numpy Array de tfs.
