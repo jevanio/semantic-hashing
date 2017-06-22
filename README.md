@@ -1,14 +1,16 @@
 # semantic-hashing
 Implementacion en Python de Semantic Hashing.
 
-### Instrucciones
+## Instrucciones
 Para entrenar la DBN y generar las cadenas binarias se realiza:
 ```python
 import semantic_hashing as sh
 W = sh.fit(train_data)
 hashs = sh.transform(test_data,W)
 ```
-##### fit()
+
+## Métodos
+### fit()
 Entrena la DBN según los tfs, la cantidad de capas ocultas, tamaño de los batchs. Retorna una lista con los pesos de la red.
 ```python
 fit(tfs, hidden_layer=[500,500], output_layer=128, maxepoch=50,
@@ -39,7 +41,7 @@ pretrain_size_batch: Tamaño de cada batch en pre-entrenamiento.
 finetuning_size_batch: Tamaño de cada batch en fine-tuning.
 ***
 
-##### transform()
+### transform()
 Transforma los tfs en cadenas binarias.
 ```python
 transform(tfs,W)
