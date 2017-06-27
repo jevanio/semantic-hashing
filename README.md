@@ -2,7 +2,7 @@
 Implementacion en Python de Semantic Hashing.
 
 ## Instrucciones
-Para entrenar la DBN y generar las cadenas binarias se realiza:
+Para realizar la DBN y generar las cadenas binarias se realiza:
 ```python
 import semantic_hashing as sh
 W = sh.fit(train_data)
